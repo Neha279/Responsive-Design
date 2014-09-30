@@ -1,0 +1,114 @@
+/*
+Date : May 2014
+Author : Neha khandelwal
+*/
+/*reset css*/
+body { margin: 0; padding: 0;   width : 100%; background-color: #cccccc;}
+a, img { padding: 0 ; margin: 0; text-decoration: none; border: 0 none; outline: none; }  
+li, ul { padding: 0 ; margin: 0; list-style-type: none;} 
+
+/*menu wrap*/
+.menu {
+     background-color:#FFFFFF ;
+     color: #0095D6;
+     height: 175px;
+     margin-left: 16.5%;
+     padding-top: 15px;
+     text-align: left;
+     width: 68%;
+     margin-bottom: 70px;
+ }
+.line {  background: none repeat scroll 0 0 #0095D6;
+    display: block;
+    float: left;
+    height: inherit;
+    left: 10px;
+    line-height: 1px;
+    margin: 0 10px;
+    padding: 0;
+    width: 1px;
+    font-size: 10px;
+}
+.li_wrap {width:100%; border-right: 1px solid #0095D6; }
+.menu ul {width : 100%; display: inline-block}
+.menu li {
+     display: inline-block;
+     float: left;
+     height: 157px;
+     width: 25%;}
+.menu a { color: #0095D6; text-decoration:  underline;}
+.menu >li{
+    display: block;
+    font-size: 10px;
+}
+.last {
+    border: 0 none;
+    background-color: #FFFFFF;
+}
+
+/* menu content */
+span.icon {
+    height: 60px;
+    margin: 0 auto;
+    width: 60px;
+    display: block;
+    font-size: 10px;
+}
+span.icon1 {
+    background-image: url("./icon1.png");    
+}
+span.icon2 {
+    background-image: url("./icon2.png");
+}
+span.icon3 {
+    background-image: url("./icon3.png");
+}
+span.icon4 {
+    background-image: url("./icon4.png");
+}
+span.title {
+    font-weight: bold;    
+    margin: 10px 40px;
+    width: 70%;
+    display: block;
+    font-size: 10px;
+}
+span.desc {     
+    margin: 0 40px;
+    width: 70%;
+    display: block;
+    font-size: 10px;
+}
+span.link { 
+    margin: 0 40px;
+    width: 70%;
+    display: block;
+    font-size: 10px;
+}
+
+/* media querry ..tablet view*/
+@media screen and (min-width : 768px) and (max-width : 1024px)
+{
+    .menu { margin-left: 5.5%; width: 90%; }
+}
+ @media screen and (min-width : 601px) and (max-width : 768px)  
+ {
+    .menu {  margin-left: 5.5%; width: 90%; height: 200px;}
+    .menu li { height : 182px;} 
+ }
+
+ /* smartphones*/
+ @media (max-width: 600px) 
+ {   
+    .menu  { height: auto; margin:auto; width:100%; padding-top: 0px; background-color: #cccccc;} 
+    .menu li { height: auto; display: block; width :100%;  border-bottom: 2px solid #0095D6; 
+                margin: 0; padding :8px 0; background: none repeat scroll 0 0 #ffffff; }
+    .line {display: none;}
+    span.link {display: none;}
+    span.icon {display: inline-block;float: left; margin:0; background-size: 40px 40px; width:40px; height: 40px;}
+    span.title {    display: inline-block;    font-weight: bold;    margin: 0 2% 4px;    width: 98%; }
+    span.desc { font-size: 12px;   margin: 0 2%;   width: 98%;    word-wrap: break-word;    }
+    #leftmenu {float: left; width: 15%; height: 40px;}
+    #rightmenu { width: 85%; float: left; height: 50px}  
+}
+
